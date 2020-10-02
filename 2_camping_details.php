@@ -46,6 +46,13 @@ foreach($parks as $park)
                     $query = $html->find('ul', 7)->find('li');
                 }
             }
+            elseif($p[1] == 5566)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
             elseif($p[1] == 5659)
             {
                 $query = $html->find('ul', 6)->find('li');
@@ -74,6 +81,25 @@ foreach($parks as $park)
                 if ($a == 29)
                 {
                     $query = $html->find('ul', 6)->find('li');
+                }
+            }
+            elseif($p[1] == 13267)
+            {
+                if ($a == 101)
+                {
+                    $query = $html->find('ul',9)->find('li');
+                }
+                elseif ($a == 29)
+                {
+                    $query = $html->find('ul', 10)->find('li');
+                }
+                elseif ($a == 34)
+                {
+                    $query = $html->find('ul',7)->find('li');
+                }
+                elseif ($a == 33)
+                {
+                    $query = $html->find('ul',8)->find('li');
                 }
             }
             elseif($p[1] == 25823)
@@ -119,6 +145,24 @@ foreach($parks as $park)
                     $query = $html->find('ul', 6)->find('li');
                 }
             }
+            elseif($p[1] == 31178)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 39314)
+            {
+                if ($a == 29)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+                elseif ($a == 34)
+                {
+                    $query = $html->find('ul');
+                }
+            }
             elseif($p[1] == 41619)
             {
                 if ($a == 34)
@@ -144,6 +188,20 @@ foreach($parks as $park)
                 if ($a == 34)
                 {
                     $query = $html->find('ul', 16)->find('li');
+                }
+            }
+            elseif($p[1] == 73539)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 6)->find('li');
+                }
+            }
+            elseif($p[1] == 79451)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 8)->find('li');
                 }
             }
 
