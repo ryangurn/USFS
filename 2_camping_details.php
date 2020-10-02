@@ -76,9 +76,46 @@ foreach($parks as $park)
                     $query = $html->find('ul', 7)->find('li');
                 }
             }
+            elseif($p[1] == 6418)
+            {
+                if ($a == 101)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+                elseif($a == 29 || $a == 34 || $a == 33)
+                {
+                    $query = $html->find('ul', 6)->find('li');
+                }
+
+            }
             elseif($p[1] == 10454)
             {
                 if ($a == 29)
+                {
+                    $query = $html->find('ul', 6)->find('li');
+                }
+            }
+            elseif($p[1] == 10902)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 12403)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 6)->find('li');
+                }
+            }
+            elseif($p[1] == 13053)
+            {
+                if ($a == 31 || $a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+                elseif ($a == 33)
                 {
                     $query = $html->find('ul', 6)->find('li');
                 }
@@ -102,11 +139,62 @@ foreach($parks as $park)
                     $query = $html->find('ul',8)->find('li');
                 }
             }
+            elseif($p[1] == 14833)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 17520)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 18536)
+            {
+                if ($a == 29)
+                {
+                    $query = $html->find('ul', 24)->find('li');
+                }
+                elseif ($a == 31)
+                {
+                    $query = $html->find('ul', 23)->find('li');
+                }
+                elseif ($a == 33)
+                {
+                    $query = $html->find('ul', 18)->find('li');
+                }
+                elseif ($a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 25120)
+            {
+                if ($a == 29 || $a == 33)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+                elseif ($a == 34)
+                {
+                    $query = $html->find('ul', 6)->find('li');
+                }
+            }
             elseif($p[1] == 25823)
             {
                 if ($a == 34)
                 {
                     $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 26225)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 9)->find('li');
                 }
             }
             elseif($p[1] == 26620)
@@ -152,6 +240,20 @@ foreach($parks as $park)
                     $query = $html->find('ul', 7)->find('li');
                 }
             }
+            elseif($p[1] == 35807)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 36905)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 6)->find('li');
+                }
+            }
             elseif($p[1] == 39314)
             {
                 if ($a == 29)
@@ -163,6 +265,27 @@ foreach($parks as $park)
                     $query = $html->find('ul');
                 }
             }
+            elseif($p[1] == 39892)
+            {
+                if ($a == 29)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 40405)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 6)->find('li');
+                }
+            }
+            elseif($p[1] == 41466)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 9)->find('li');
+                }
+            }
             elseif($p[1] == 41619)
             {
                 if ($a == 34)
@@ -170,10 +293,23 @@ foreach($parks as $park)
                     $query = $html->find('ul', 17)->find('li');
                 }
             }
+            elseif($p[1] == 42728)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 47687)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 12)->find('li');
+                }
+            }
             elseif($p[1] == 54884)
             {
                 $query = $html->find('ul');
-                //34 = 7, 101/29=6
                 if ($a == 34)
                 {
                     $query = $html->find('ul', 7)->find('li');
@@ -183,11 +319,44 @@ foreach($parks as $park)
                     $query = $html->find('ul', 6)->find('li');
                 }
             }
+            elseif($p[1] == 56399)
+            {
+                if ($a == 29)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 67155)
+            {
+                if ($a == 33 | $a == 31 | $a == 101)
+                {
+                    $query = $html->find('ul', 6)->find('li');
+                }
+                elseif($a == 34)
+                {
+                    $query = $html->find('ul', 8)->find('li');
+                }
+                elseif($a == 29)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+            }
+            elseif($p[1] == 69400)
+            {
+                $query = $html->find('ul', 6)->find('li');
+            }
             elseif($p[1] == 71389)
             {
                 if ($a == 34)
                 {
                     $query = $html->find('ul', 16)->find('li');
+                }
+            }
+            elseif($p[1] == 72816)
+            {
+                if ($a == 34)
+                {
+                    $query = $html->find('ul', 6)->find('li');
                 }
             }
             elseif($p[1] == 73539)
@@ -196,6 +365,21 @@ foreach($parks as $park)
                 {
                     $query = $html->find('ul', 6)->find('li');
                 }
+            }
+            elseif($p[1] == 74405)
+            {
+                if ($a == 29)
+                {
+                    $query = $html->find('ul', 7)->find('li');
+                }
+                elseif ($a == 34)
+                {
+                    $query = $html->find('ul', 8)->find('li');
+                }
+            }
+            elseif($p[1] == 75436)
+            {
+                $query = $html->find('ul', 6)->find('li');
             }
             elseif($p[1] == 79451)
             {
