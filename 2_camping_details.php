@@ -5,11 +5,8 @@ include('simplehtmldom/simple_html_dom.php');
 
 define('FOLDER_NAME', '2_camping_details_testing');
 
-$parks = file_get_contents('info.csv');
+$parks = file_get_contents('camping_details_info.csv');
 $parks = explode("\n", $parks);
-
-# allegheny[6083][29/31]=11, allegheny[6083][33]=10, allegheny[6083][34]=14, allegheny[6083][101]=7
-# bdnf(6), coconino(6), prescott(6), santafe(6)
 
 foreach($parks as $park)
 {
@@ -27,14 +24,6 @@ foreach($parks as $park)
             echo "|--- " . $p[3] . " - ". $url ." ---|\n";
             file_put_contents(FOLDER_NAME . '/' .$p[3].'.html', "\n|--- " . $p[3] . " - ". $url ." ---|\n", FILE_APPEND);
 
-    //        foreach($html->find('ul') as $key => $ul)
-    //        {
-    //            echo $key . ':' . $ul . "\n";
-    ////            foreach($html->find('li') as $li)
-    ////            {
-    ////                echo $key . ":". $li . "\n";
-    ////            }
-    //        }
 
             // default query
             $query = $html->find('ul', 5)->find('li');
