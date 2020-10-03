@@ -3,7 +3,7 @@
 # setup composer
 include('simplehtmldom/simple_html_dom.php');
 
-define('FOLDER_NAME', '2_camping_details_testing');
+define('FOLDER_NAME', '2_camping_details');
 
 $parks = file_get_contents('camping_details_info.csv');
 $parks = explode("\n", $parks);
