@@ -11,8 +11,8 @@ foreach ($lines as $num => $line)
     $str = "";
     $items = str_getcsv($line);
 
-    $str .= "|--- " .$items[0]. " - " . $items[1] . " - ". $items[3] ." ---|\n";
-    $str .= "|--- " .$items[5]." ---|\n";
+//    $str .= "|--- " .$items[0]. " - " . $items[1] . " - ". $items[3] ." ---|\n";
+//    $str .= "|--- " .$items[5]." ---|\n";
 
     $html = file_get_html($items[5]);
 
@@ -33,10 +33,10 @@ foreach ($lines as $num => $line)
                 }
             }
             $str .= $items[0]. "," . $items[1] . "," . $lat . "," . $lon . "\n";
+            file_put_contents('./3_camping_locations/'.$items[4].'.csv', $str, FILE_APPEND);
         }
     }
 
-    $str .= "\n\n";
-    echo $items[4]." - ".$num."/".$lineCount."\t\t\r";
-    file_put_contents('./3_camping_locations/'.$items[4].'.csv', $str, FILE_APPEND);
+//    $str .= "\n\n";
+    echo $items[4]." - ".$num."/".$lineCount."\t\t\t\t\r";
 }
